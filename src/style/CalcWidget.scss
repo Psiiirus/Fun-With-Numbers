@@ -1,0 +1,72 @@
+.CalcWidget {
+
+  .CalcWidgetSetup {
+    .SumNumbers {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .button {
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        border: 1px solid #0c0a09;
+        align-content: center;
+
+
+        &.active {
+          background-color: #0c0a09;
+          color: #FFF;
+        }
+      }
+    }
+
+    button {
+      border: 1px solid #0c0a09;
+      padding: 0.5rem;
+    }
+  }
+
+  .CalcItem {
+
+    display: flex;
+    gap: 4rem;
+
+    input {
+      height: 4rem;
+      width: 4rem;
+      text-align: center;
+    }
+
+    form {
+      justify-content: space-between;
+      background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="99.4538" y1="17.2099" x2="25.4538" y2="177.21" stroke="black"/><line y1="-0.5" x2="176.284" y2="-0.5" transform="matrix(0.419778 0.907627 0.907627 -0.419778 101 17)" stroke="black"/></svg>');
+
+      max-width: 200px;
+      width: 100%;
+      height: 200px;
+      max-height: 200px;
+      display: flex;
+
+      .equal,
+      .operation {
+        display: none;
+      }
+
+      #sum {
+        align-self: flex-start;
+        order: 2;
+      }
+
+      #summand1 {
+        align-self: flex-end;
+        order: 1;
+      }
+
+      #summand2 {
+        align-self: flex-end;
+        order: 3;
+      }
+    }
+  }
+}
