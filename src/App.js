@@ -1,10 +1,10 @@
 import './style/App.scss';
-import CalcGame from './comps/CalcWidget';
+import CalcWidget from './comps/CalcWidget';
 
 function App() {
   return (
     <div className="App">
-      <CalcGame />
+      <CalcWidget />
     </div>
   );
 }

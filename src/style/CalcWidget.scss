@@ -1,4 +1,9 @@
 .CalcWidget {
+  margin-top: 2em;
+
+  h1 {
+    margin-bottom: 1em;
+  }
 
   .CalcWidgetSetup {
     .SumNumbers {
@@ -6,6 +11,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
+      justify-content: center;
+
       .button {
         height: 4rem;
         width: 4rem;
@@ -29,44 +36,57 @@
 
   .CalcItem {
 
-    display: flex;
-    gap: 4rem;
-
-    input {
-      height: 4rem;
-      width: 4rem;
-      text-align: center;
+    .ProgressBar{
+      margin: 1em;
     }
 
-    form {
-      justify-content: space-between;
-      background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="99.4538" y1="17.2099" x2="25.4538" y2="177.21" stroke="black"/><line y1="-0.5" x2="176.284" y2="-0.5" transform="matrix(0.419778 0.907627 0.907627 -0.419778 101 17)" stroke="black"/></svg>');
+    .controls {
 
-      max-width: 200px;
-      width: 100%;
-      height: 200px;
-      max-height: 200px;
+
       display: flex;
+      gap: 4rem;
+      justify-content: center;
 
-      .equal,
-      .operation {
-        display: none;
+      input {
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
       }
 
-      #sum {
-        align-self: flex-start;
-        order: 2;
-      }
+      form {
+        justify-content: space-between;
+        background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="99.4538" y1="17.2099" x2="25.4538" y2="177.21" stroke="black"/><line y1="-0.5" x2="176.284" y2="-0.5" transform="matrix(0.419778 0.907627 0.907627 -0.419778 101 17)" stroke="black"/></svg>');
 
-      #summand1 {
-        align-self: flex-end;
-        order: 1;
-      }
+        max-width: 200px;
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        display: flex;
 
-      #summand2 {
-        align-self: flex-end;
-        order: 3;
+        .equal,
+        .operation {
+          display: none;
+        }
+
+        #sum {
+          align-self: flex-start;
+          order: 2;
+        }
+
+        #summand1 {
+          align-self: flex-end;
+          order: 1;
+        }
+
+        #summand2 {
+          align-self: flex-end;
+          order: 3;
+        }
       }
     }
+  }
+
+  table {
+    margin: 0 auto 2em auto;
   }
 }
