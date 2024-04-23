@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Fun-With-Numbers/static/css/main.a545df97.css",
-    "main.js": "/Fun-With-Numbers/static/js/main.63549e3a.js",
+    "main.css": "/Fun-With-Numbers/static/css/main.284d41e9.css",
+    "main.js": "/Fun-With-Numbers/static/js/main.a6f603a5.js",
     "static/js/453.8009316c.chunk.js": "/Fun-With-Numbers/static/js/453.8009316c.chunk.js",
     "index.html": "/Fun-With-Numbers/index.html",
-    "main.a545df97.css.map": "/Fun-With-Numbers/static/css/main.a545df97.css.map",
-    "main.63549e3a.js.map": "/Fun-With-Numbers/static/js/main.63549e3a.js.map",
+    "main.284d41e9.css.map": "/Fun-With-Numbers/static/css/main.284d41e9.css.map",
+    "main.a6f603a5.js.map": "/Fun-With-Numbers/static/js/main.a6f603a5.js.map",
     "453.8009316c.chunk.js.map": "/Fun-With-Numbers/static/js/453.8009316c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a545df97.css",
-    "static/js/main.63549e3a.js"
+    "static/css/main.284d41e9.css",
+    "static/js/main.a6f603a5.js"
   ]
 }
