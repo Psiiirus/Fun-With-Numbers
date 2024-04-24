@@ -122,26 +122,29 @@ export default function CalcItem({sum,summand1,summand2, onResolve,operation} = 
 
     <div className="controls">
       <form className={'operation_'+operation}>
-        <input
-            placeholder={'?'}
-            id={'sum'}
-            value={sumEle ?? ''}
-            onChange={e => setSumEle(parseInt(e.target.value))}
-        />
-        <span className={'equal'}>=</span>
-        <input
-            placeholder={'?'}
-            id={'summand1'}
-            value={summand1Ele ?? ''}
-            onChange={e => setSummand1Ele(parseInt(e.target.value))}
-        />
-        <span className={'operation'}>{operation}</span>
-        <input
-            placeholder={'?'}
-            id={'summand2'}
-            value={summand2Ele ?? ''}
-            onChange={e => setSummand2Ele(parseInt(e.target.value))}
-        />
+        <fieldset>
+          <input
+              placeholder={'?'}
+              id={'sum'}
+              value={sumEle ?? ''}
+              onChange={e => setSumEle(parseInt(e.target.value))}
+          />
+          <span className={'equal'}>=</span>
+          <input
+              placeholder={'?'}
+              id={'summand1'}
+              value={summand1Ele ?? ''}
+              onChange={e => setSummand1Ele(parseInt(e.target.value))}
+          />
+          <span className={'operation'}>{operation}</span>
+          <input
+              placeholder={'?'}
+              id={'summand2'}
+              value={summand2Ele ?? ''}
+              onChange={e => setSummand2Ele(parseInt(e.target.value))}
+          />
+        </fieldset>
+        <div className={'text'}>Welche Zahl muss in die Lücke, damit die beiden unteren Zahlen zusammen die <b>{sumEle}</b> im Dach ergeben?</div>
       </form>
       {/*<button onClick={doResolve}>jetzt lösen</button>*/}
       <hr/>

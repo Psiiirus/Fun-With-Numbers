@@ -47,6 +47,7 @@ export default function CalcQuestionSummary({calcList,onRestart}) {
   });
 
   return (<div className={'CalcWidget'}>
+    <h1>🧠 Spass mit Zahlen / Auswertung</h1>
     <strong>⭐️ Punkte:</strong> 100 von 100 <small><i>(tbd.)</i></small><br/>
     <strong>✅ Anzahl richtiger Lösungen:</strong> {rightAnswerCount} von {calcList.length}<br/>
     <strong>⏱️

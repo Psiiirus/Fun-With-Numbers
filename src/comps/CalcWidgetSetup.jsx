@@ -44,17 +44,36 @@ export default function CalcWidgetSetup({onStart}) {
   }
 
   return (<div className={'CalcWidgetSetup'}>
+    <h1>🧠 Spass mit Zahlen</h1>
     <p>Mit welchen Zahlen soll gespielt werden?</p>
     <div className="SumNumbers">
-      <div className={'button'+(isSumNumbersActive(1)?' active':'')} onClick={e => toggleSumNumbers(1)}>1</div>
-      <div className={'button'+(isSumNumbersActive(2)?' active':'')}  onClick={e => toggleSumNumbers(2)}>2</div>
-      <div className={'button'+(isSumNumbersActive(3)?' active':'')}  onClick={e => toggleSumNumbers(3)}>3</div>
-      <div className={'button'+(isSumNumbersActive(4)?' active':'')}  onClick={e => toggleSumNumbers(4)}>4</div>
-      <div className={'button'+(isSumNumbersActive(5)?' active':'')}  onClick={e => toggleSumNumbers(5)}>5</div>
-      <div className={'button'+(isSumNumbersActive(6)?' active':'')}  onClick={e => toggleSumNumbers(6)}>6</div>
-      <div className={'button'+(isSumNumbersActive(7)?' active':'')}  onClick={e => toggleSumNumbers(7)}>7</div>
-      <div className={'button'+(isSumNumbersActive(8)?' active':'')}  onClick={e => toggleSumNumbers(8)}>8</div>
-      <div className={'button'+(isSumNumbersActive(9)?' active':'')}  onClick={e => toggleSumNumbers(9)}>9</div>
+      <div className={'button' + (isSumNumbersActive(1) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(1)}>1
+      </div>
+      <div className={'button' + (isSumNumbersActive(2) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(2)}>2
+      </div>
+      <div className={'button' + (isSumNumbersActive(3) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(3)}>3
+      </div>
+      <div className={'button' + (isSumNumbersActive(4) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(4)}>4
+      </div>
+      <div className={'button' + (isSumNumbersActive(5) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(5)}>5
+      </div>
+      <div className={'button' + (isSumNumbersActive(6) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(6)}>6
+      </div>
+      <div className={'button' + (isSumNumbersActive(7) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(7)}>7
+      </div>
+      <div className={'button' + (isSumNumbersActive(8) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(8)}>8
+      </div>
+      <div className={'button' + (isSumNumbersActive(9) ? ' active' : '')}
+           onClick={e => toggleSumNumbers(9)}>9
+      </div>
     </div>
     <button onClick={finish}>🚀 Und los!</button>
   </div>);

@@ -45,7 +45,7 @@ function createCalcQuestions(sumNumbers =[],operations =[], count= 3) {
   }
 
   const calcList = [];
-  for (let a=0;a<=count;a+=1)  {
+  for (let a=0;a<count;a+=1)  {
     calcList.push(createCalcQuestion(getRandomElementFromArray(sumNumbers),getRandomElementFromArray(operations)))
   }
 
@@ -111,8 +111,7 @@ export default function CalcWidget() {
   }
 
   return (<div className={'CalcWidget'}>
-    <h1>🧠 Spass mit Zahlen</h1>
-    {!isStarted?<CalcWidgetSetup onStart={startCalc} />:(isFinished?<CalcQuestionSummary calcList={calcList.current} onRestart={onRestart} />:
+    {!isStarted?<CalcWidgetSetup onStart={startCalc} />:(isFinished?<CalcQuestionSummary calcList={calcList.current} onRestart={onRestart} />:<div>
     <CalcItem
         sum={currentSum}
         summand1={currentSummand1}
@@ -120,6 +119,6 @@ export default function CalcWidget() {
         operation={calcList.current[currentQuestionIndex].operation}
         onResolve={calcResolved}
         key={currentSum+''+currentSummand1+''+currentSummand2}
-    />)}
+    /><small>{currentQuestionIndex+1}{'/'}{calcList.current.length}</small></div>)}
   </div>);
 }
