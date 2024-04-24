@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Fun-With-Numbers/static/css/main.284d41e9.css",
-    "main.js": "/Fun-With-Numbers/static/js/main.a6f603a5.js",
+    "main.css": "/Fun-With-Numbers/static/css/main.d985682c.css",
+    "main.js": "/Fun-With-Numbers/static/js/main.15985fc7.js",
     "static/js/453.8009316c.chunk.js": "/Fun-With-Numbers/static/js/453.8009316c.chunk.js",
+    "static/media/house_BG.svg": "/Fun-With-Numbers/static/media/house_BG.4273106f05ca8d7f77dc.svg",
     "index.html": "/Fun-With-Numbers/index.html",
-    "main.284d41e9.css.map": "/Fun-With-Numbers/static/css/main.284d41e9.css.map",
-    "main.a6f603a5.js.map": "/Fun-With-Numbers/static/js/main.a6f603a5.js.map",
+    "main.d985682c.css.map": "/Fun-With-Numbers/static/css/main.d985682c.css.map",
+    "main.15985fc7.js.map": "/Fun-With-Numbers/static/js/main.15985fc7.js.map",
     "453.8009316c.chunk.js.map": "/Fun-With-Numbers/static/js/453.8009316c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.284d41e9.css",
-    "static/js/main.a6f603a5.js"
+    "static/css/main.d985682c.css",
+    "static/js/main.15985fc7.js"
   ]
 }
